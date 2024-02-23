@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    padding: 2em;
+}
+
+.beat, .service {
+    border: 1px solid green;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: -2.5em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    boarder-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+a {
+    color: aliceblue;
+}
+a:hover {
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+a:visited {
+    color: aquamarine;
+}
+
+a:active {
+    color: rosybrown;
+}

@@ -1,0 +1,5 @@
+{% extends "polls/index.html" %}
+{% block beat %}
+<h2>You are loooking at details for question {{ q_details.id }}. {{ q_details }}</h2>
+<a href="{% url 'polls:vote' q_details.id %}">Vote for this question</a>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'polls/index.html' %}
+{% block beat %}
+<h1>{{ questn.question_text }}</h1>
+<p>This is result for {{ questn }} </p>
+<ul>
+    {% for item in questn.choice_set.all %}
+    <li>{{ item.choice_text }} -- {{ item.votes }} vote{{ item.votes|pluralize }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'polls:vote' questn.id %}">Vote again?</a>
+{% endblock %}

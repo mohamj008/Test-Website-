@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css",  href="{% static '/css/styles.css'%}">
+    <title>Music Producer Website</title>
+</head>
+<body>
+
+  <header>
+    {% block beat %}
+    <h1>BeatMaster Pro</h1>
+    <p>Your source for high-quality beats and professional audio services.</p>
+  </header>
+
+  <section id="beats">
+    <h2>Beats for Sale</h2>
+    <!-- Add your beat listings here -->
+    <div class="beat">
+      <h3>Beat Title 1</h3>
+      <p>Description of the beat.</p>
+      <button onclick="purchaseBeat('Beat Title 1')">Purchase</button>
+    </div>
+
+    <div class="beat">
+      <h3>Beat Title 2</h3>
+      <p>Description of the beat.</p>
+      <button onclick="purchaseBeat('Beat Title 2')">Purchase</button>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <!-- Add your service offerings here -->
+    <div class="service">
+      <h3>Mixing</h3>
+      <p>Professional mixing services to make your music stand out.</p>
+      <button onclick="purchaseService('Mixing')">Get Mixing</button>
+    </div>
+
+    <div class="service">
+      <h3>Mastering</h3>
+      <p>High-quality mastering to give your tracks that final polish.</p>
+      <button onclick="purchaseService('Mastering')">Get Mastering</button>
+    </div>
+  </section>
+    
+  {% endblock %}
+  <footer>
+    <p>&copy; 2024 BeatMaster Pro. All rights reserved.</p>
+  </footer>
+
+  <script src='{% static "/js/script.js"%}'></script>
+</body>
+</html>
